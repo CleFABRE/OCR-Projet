@@ -1,0 +1,316 @@
+/* Variables */
+$color-primaire: #9356DC;
+$color-secondaire: #FF79DA;
+$color-tertiaire: #99E2D0;
+
+$color-bottom-grey: #F2F2F2;
+$color-bottom-dark: #EAEAEA; 
+
+$color-typo: #353535;
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    font-family: 'roboto';
+}
+
+/* Header */
+.sec-logo--log {
+    height: 4em;
+    display: flex;
+    position: relative;
+    z-index: 2;
+    flex-direction: row;
+    background-color: white;
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.2));
+    &_l{
+        width: 11em;
+        display: flex;
+        margin: auto;
+        padding: 1.1em;
+    }
+}
+
+.sec-loca {
+    height: 3.1em;
+    width: 23.4em;
+    position: absolute;
+    background-color: $color-bottom-dark;
+    display: flex;
+    filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.2));
+    &--loca{
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+    &_icon{
+        font-size: 1em;
+        margin-top: 1.2em;
+        margin-right: 1.4em;
+        color: $color-typo;
+    }
+    &_p-l{
+        font-size: 1.1em;
+
+    }
+    }
+}
+
+.sec-exp {
+    margin-top: 0;
+    height: 18em;
+    background-color: $color-bottom-grey;
+}
+
+.title1 {
+    font-size: 1.5em;
+    margin: 2.1em 3em 0 3em;
+    padding-top: 1.5em;
+    text-align: center;
+}
+
+.title2 {
+    font-size: 1.1em;
+    font-weight: lighter;
+    text-align: center;
+}
+
+/* Animation bouton Explorer et Commander */
+.btn {
+    height: 50px;
+    width: 218px;
+    margin: auto;
+    box-sizing: border-box;
+    &-link{
+        text-decoration: none;
+        &--style{
+            height: 50px;
+            border-radius: 2em;
+            margin-top: 2.2em;
+            background: linear-gradient(#FF79DA, #9356dc);
+            filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.3));
+            &_2{
+                margin-left: 1.5em;
+                padding-top: 1em;
+                font-size: 1em;
+                color: white;
+            }
+        }
+    }
+}
+.btn-link--style1{
+    height: 3.1em;
+    border-radius: 2em;
+    margin-top: 2.2em;
+    background: linear-gradient(#FF79DA, #9356dc);
+    filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.3));
+}
+.btn-link:active{
+    opacity: 0.9;
+    filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.4));
+}
+
+/* Fonctionnement */
+.title3 {
+    font-size: 1.5em;
+    margin-left: 1em;
+    margin-top: 2em;
+}
+
+.choice {
+    display: flex;
+    margin: 0.4em;
+    margin-bottom: 2.5em;
+    box-sizing: border-box;
+    margin-left: 0.3em;
+    filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.1));
+    &-nub{
+        height: 1.5em;
+        width: 1.5em;
+        border-radius: 100%;
+        background-color: $color-primaire;
+        color: white;
+        margin-left: 1em;  
+        margin-top: 1.5em;
+        position: relative;
+        z-index: 1;
+        &--ch{
+        font-size: 0.9em;
+        margin-left: 0.5em;
+        margin-top: 0.3em;
+        }
+    }
+    &-link{
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: 500;
+        color: black;
+        &--type{
+            height: 4.5em;
+            width: 20em;
+            border-radius: 1.3em;
+            background-color: $color-bottom-grey;
+            position: absolute;
+            margin-left: -0.8em;
+            &_icon{
+                font-size: 1.2em;
+                color: #7E7E7E;
+                margin-top: 1.4em;
+                margin-left: 2em;
+                margin-right: 1em;
+            }
+        }
+    }
+}
+.fa-store{
+    color: #9356DC;
+}
+
+/* Restaurants */
+.resto {
+    margin-top: 5.7em;
+    background-color: $color-bottom-grey;
+    padding-top: 0.2em;
+    height: 76em;
+    box-sizing: border-box;
+}
+
+.resto-card{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.1em;
+    height: 15.6em;
+    width: 21.2em;
+    &--ca{
+        margin-bottom: 1.1em;
+        background-color: white;
+        border-radius: 15px;
+        &_img-food{
+            height: 10.9em;
+            width: 21.2em;
+            border-radius: 15px 15px 0 0;
+            object-fit: cover;
+            position: absolute;
+        }
+        &_badge{
+            height: 1.8em;
+            width: 5em;
+            background-color: $color-tertiaire;
+            position: relative;
+            z-index: 1;
+            float: right;
+            border-radius: 2px;
+            margin-top: 0.7em;
+            margin-right: 0.7em;
+            color: #008766;
+            &-new{
+                margin: auto;
+                margin-left: 0.5em;
+                margin-top: 0.3em;
+            }
+        }
+        &_content{
+            position: relative;
+            z-index: 2;
+            padding-top: 10.5em;
+            &-name{
+                font-size: 1.1em;
+                color: black;
+                margin-left: 1em;
+            }
+            &-name2{
+                font-size: 1em;
+                font-weight: lighter;
+                margin-top: -1.3em;
+                color: black;
+                margin-left: 1em;
+                padding-bottom: 1em;
+            }
+        }
+    }
+}
+
+/* Animation J'AIME */ 
+.heart-like{
+    color: black;
+    float: right;
+    margin-right: 3.2em;
+}
+.like, .icons{
+    position: absolute;
+    z-index: 3;
+}
+.icons{
+    font-size: 1.6em;
+    cursor: pointer;
+}
+.icon-notlike{
+    margin-top: -2.2em;
+    font-size: 1.6em;
+}
+.icon-like{
+    opacity: 0;
+    color: transparent;
+    background-image: linear-gradient(#9356dc,#FF79DA);
+    background-clip: text;
+    margin-top: -2.65em;
+    transition: 0.5s ease-in-out;
+}
+.heart-like:active .icon-like{
+    opacity: 1;
+}
+
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked{
+    opacity: 0.01;
+}
+[type="checkbox"]:checked ~ .icon-like{
+    opacity: 1;
+}
+
+/* Footer */
+footer {
+    background-color: $color-typo;
+    height: 11.7em;
+}
+
+.foot-article{
+    margin-left: 1.5em;
+    &--logo{
+        font-size: 1.1em;
+        color: white;
+        font-family: 'shrikhand', 'cursive';
+    }
+}
+
+ul {
+    list-style-type: none;
+    color: white;
+    margin-top: -0.3em;
+    margin-left: -2.5em;
+}
+
+li a {
+    font-size: 1em;
+    color: white; 
+}
+
+li {
+    padding-top: 0.4em;
+    font-weight: 300;
+}
+
+.icon-esp {
+    margin-top: -1.2em;
+    margin-left: 1.6em;
+    font-weight: 400;
+}
+
+.space {
+    margin-top: 0.1em;
+}
