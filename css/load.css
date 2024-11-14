@@ -1,48 +1,87 @@
+#loader_{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    animation: loader 3s forwards;
+    z-index: 1000;
+}
+
 .stove{
-    width: 80px;
+    width: 5em;
     height: 10px;
-    margin-left: 7em;
+    margin: auto;
     margin-top: 15em;
     background-color: black;
     border: 2px solid black;
     border-radius: 0 0 50% 50%;
 }
 .stove1{
-    margin-left: 12.4em;
+    margin-left: 14.5em;
     margin-top: -0.8em;
-    width: 40px;
+    width: 2.5em;
     height: 5px;
     background-color: black;
     border-radius: 5em 5em 5em 5em;
 }
 .food{
-    margin-left: 7.1em;
+    margin: auto;
     margin-top: -0.75em;
-    width: 80px;
+    width: 5em;
     height: 6px;
     border-radius: 5em 5em 0 0;
-    background-color: wheat;
+    background: linear-gradient(#9356dc,#FF79DA);
 }
 
 .shadow{
-    margin-left: 7.1em;
+    margin-left: 9.2em;
     margin-top: 1.9em;
-    width: 40px;
+    width: 5em;
     height: 5px;
     background-color: #99E2D0;
     border-radius: 5em 5em 5em 5em;
-    animation: shadow 4s linear infinite;
+    animation: shadow 2s linear forwards;
 }
-@keyframes shadow{
+
+@keyframes loader{
     0%{
-        width: 0%;
+        opacity: 1;
     }
-    90%{
-        width: 23%;
+    60%{
+        opacity: 1;
     }
     100%{
-        width: 23%;
+        opacity: 0;
+        z-index: -10;
     }
 }
 
+@keyframes shadow{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 5em;
+    }
+}
 
+/* Media queries, breakpoint (tablets et desktop, sup 768px)*/
+@media (min-width: 768px) {
+    .stove{
+        margin-top: 21em;
+        width: 7.5em;
+    }
+    .stove1{
+        margin-left: 49em;
+        height: 6px;
+    }
+    .food{
+        width: 7.5em;
+        margin-top: -0.8em;
+    }
+    .shadow{
+        margin-left: 42.3em;
+    }
+}
