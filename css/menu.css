@@ -209,7 +209,7 @@ p {
 
 .main-menu--plats:active .trim {
   animation: animate 0.25s linear forwards;
-  max-width: 220px;
+  max-width: 13.7em;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
