@@ -73,8 +73,8 @@ body {
 
 /* Animation bouton Explorer et Commander */
 .btn {
-  height: 50px;
-  width: 218px;
+  height: 3.1em;
+  width: 13.6em;
   margin: auto;
   box-sizing: border-box;
 }
@@ -82,7 +82,7 @@ body {
   text-decoration: none;
 }
 .btn-link--style {
-  height: 50px;
+  height: 3.1em;
   border-radius: 2em;
   margin-top: 2.2em;
   background: linear-gradient(#FF79DA, #9356dc);
