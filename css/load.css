@@ -66,9 +66,24 @@
         width: 5em;
     }
 }
-
 /* Media queries, breakpoint (tablets et desktop, sup 768px)*/
 @media (min-width: 768px) {
+    .stove{
+        margin-top: 21em;
+    }
+    .stove1{
+        margin-left: 26.8em;
+        height: 6px;
+    }
+    .food{
+        margin-top: -0.8em;
+    }
+    .shadow{
+        margin-left: 21.5em;
+    }
+}
+/* Media queries, breakpoint (desktop, sup 768px)*/
+@media (min-width: 1024px) {
     .stove{
         margin-top: 21em;
         width: 7.5em;
