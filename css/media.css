@@ -1,6 +1,110 @@
 @charset "UTF-8";
-/* Media queries, breakpoint (tablets et desktop, sup 768px)*/
+/* Media queries, breakpoint (tablet, sup 768px)*/
 @media (min-width: 768px) {
+  .sec-logo--log {
+    filter: none;
+  }
+  .sec-logo--log_l {
+    width: 12.5em;
+    margin: auto;
+  }
+  .sec-loca {
+    filter: none;
+    width: 768px;
+  }
+  .sec-exp {
+    height: 15em;
+  }
+
+  /* Fonctionnement */ 
+  .title3 {
+    margin-left: 4em;
+  }
+  .choice {
+    margin-left: 5em;
+  }
+
+  /* Card Restaurant */
+  .resto {
+    height: 45em;
+  }
+  .resto-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 768px;
+    height: 34.5em;
+    margin-left: -2em;
+    padding-left: 1em;
+    flex-wrap: wrap;
+  }
+  .resto-card--ca {
+    height: 15.9em;
+    width: 21.2em;
+    margin-left: 2em;
+    margin-bottom: 3em;
+  }
+  .resto-card--ca_img-food {
+    height: 11em;
+    width: 21.2em;
+  }
+
+  /* Animation coeur */
+  .heart-like {
+    margin-top: -2em;
+  }
+
+  /* Main MENU */
+  .resto-pic img {
+    min-width: 768px;
+  }
+  h1 {
+    margin-left: 8em;
+  }
+  .main {
+    height: 76.3em;
+    width: 768px;
+    top: 13em;
+    margin: auto;
+  }
+  .main-menu {
+    margin-left: 4em;
+  }
+  .main-menu--plats {
+    width: 634px;
+  }
+  .main-button {
+    margin-top: 3.5em;
+  }
+
+  /* Main MENU La note enchantée */
+  .main1 {
+    height: 81.5em;
+    width: 768px;
+    top: 13em;
+    margin: auto;
+  }
+
+  /* Animation Coeur */ 
+  .heart-like1 {
+    margin-right: 11em;
+    margin-top: -2.5em;
+  }
+
+  /* Footer INDEX / MENU 1 */
+  footer {
+    width: 768px;
+    top: 8em;
+  }
+  /* Footer La note enchantée */
+  .one {
+    top: 8.5em;
+  }
+}
+
+
+/* Media queries, breakpoint (desktop, sup 1024px)*/
+@media (min-width: 1024px) {
   body {
     max-width: 1440px;
   }
