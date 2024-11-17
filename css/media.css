@@ -34,14 +34,14 @@
     justify-content: space-between;
     width: 768px;
     height: 34.5em;
-    margin-left: -2em;
+    margin-left: -2.3em;
     padding-left: 1em;
     flex-wrap: wrap;
   }
   .resto-card--ca {
     height: 15.9em;
     width: 21.2em;
-    margin-left: 2em;
+    margin-left: 2.8em;
     margin-bottom: 3em;
   }
   .resto-card--ca_img-food {
