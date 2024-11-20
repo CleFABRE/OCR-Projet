@@ -9,38 +9,21 @@
     z-index: 1000;
 }
 
-.stove{
-    width: 5em;
-    height: 10px;
-    margin: auto;
-    margin-top: 15em;
-    background-color: black;
-    border: 2px solid black;
-    border-radius: 0 0 50% 50%;
+.loader{
+    margin-top: 19.5em;
+    margin-left: 42%;
 }
-.stove1{
-    margin-left: 14.5em;
-    margin-top: -0.8em;
-    width: 2.5em;
-    height: 5px;
-    background-color: black;
-    border-radius: 5em 5em 5em 5em;
-}
-.food{
-    margin: auto;
-    margin-top: -0.75em;
-    width: 5em;
-    height: 6px;
-    border-radius: 5em 5em 0 0;
-    background: linear-gradient(#9356dc,#FF79DA);
+
+.fa-bowl-food{
+    font-size: 4em;
 }
 
 .shadow{
-    margin-left: 9.2em;
-    margin-top: 1.9em;
-    width: 5em;
-    height: 5px;
-    background-color: #99E2D0;
+    margin-left: -2.9em;
+    margin-top: 0.7em;
+    width: 10em;
+    height: 6px;
+    background: linear-gradient(45deg,#FF79DA, #9356dc,#FF79DA);;
     border-radius: 5em 5em 5em 5em;
     animation: shadow 2s linear forwards;
 }
@@ -49,7 +32,7 @@
     0%{
         opacity: 1;
     }
-    60%{
+    70%{
         opacity: 1;
     }
     100%{
@@ -63,40 +46,31 @@
         width: 0;
     }
     100%{
-        width: 5em;
+        width: 10em;
     }
 }
 /* Media queries, breakpoint (tablets et desktop, sup 768px)*/
 @media (min-width: 768px) {
-    .stove{
-        margin-top: 21em;
+    .loader{
+        margin-left: 45%;
     }
-    .stove1{
-        margin-left: 26.8em;
-        height: 6px;
-    }
-    .food{
-        margin-top: -0.8em;
+    .fa-bowl-food{
+        font-size: 4.5em;
     }
     .shadow{
-        margin-left: 21.5em;
+        margin-left: -2.6em;
     }
 }
 /* Media queries, breakpoint (desktop, sup 768px)*/
 @media (min-width: 1024px) {
-    .stove{
-        margin-top: 21em;
-        width: 7.5em;
+    .loader{
+        margin-left: 48%;
+        margin-top: 19em;
     }
-    .stove1{
-        margin-left: 49em;
-        height: 6px;
-    }
-    .food{
-        width: 7.5em;
-        margin-top: -0.8em;
+    .fa-bowl-food{
+        font-size: 5em;
     }
     .shadow{
-        margin-left: 42.3em;
+        margin-left: -2.3em;
     }
 }
