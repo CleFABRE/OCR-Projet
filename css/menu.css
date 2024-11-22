@@ -11,14 +11,14 @@ a {
 }
 
 .sec-logo--log_l {
-  margin-left: 5em;
+  margin-left: auto;
 }
 
 /* Main */
 .resto-pic img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 23.5em;
+  width: 100%;
   height: 17em;
   position: absolute;
 }
@@ -54,7 +54,7 @@ p {
 
 .main {
   height: 71.3em;
-  width: 23.5em;
+  width: 100%;
   position: relative;
   z-index: 2;
   top: 12em;
@@ -62,14 +62,14 @@ p {
   background-color: #F6F6F6;
 }
 .main-menu {
-  margin-left: 1em;
+  margin-left: 5%;
   margin-top: 2em;
 }
 .main-menu--plats {
   background-color: white;
   filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.1));
   height: 4.3em;
-  width: 21.5em;
+  width: 95%;
   border-radius: 1em;
 }
 .main-menu--price {
@@ -82,7 +82,7 @@ p {
 /* Main La note enchantée */
 .main1 {
   height: 76.5em;
-  width: 23.5em;
+  width: 100%;
   position: relative;
   z-index: 2;
   top: 12em;
@@ -137,19 +137,15 @@ p {
   font-weight: 400;
 }
 
-/* Animation Coeur MENU faux */
+/* Animation Coeur MENU */
 .heart-like1 {
-  font-size: 1.4em;
-  float: right;
-  margin-right: 2.2em;
-  margin-top: -2.5em;
   cursor: pointer;
 }
 
 .icon-notlike1 {
   font-size: 22px;
   margin-top: 0.7em;
-  margin-left: -0.95em;
+  transition: 0.5s ease-in-out;
 }
 
 .icons1 {
@@ -158,16 +154,21 @@ p {
 
 .icon-like1 {
   opacity: 0;
+  font-size: 22px;
   color: transparent;
   background-image: linear-gradient(#9356dc, #FF79DA);
   -webkit-background-clip: text;
           background-clip: text;
-  margin-top: -0.95em;
-  transition: opacity 0.5s ease-in-out;
+  margin-top: 0.25em;
+  transition: 0.5s ease-in-out;
 }
 
 .heart-like1:active .icon-like1 {
   opacity: 1;
+}
+
+.heart-like1:active .icon-notlike1 {
+  opacity: 0;
 }
 
 [type=checkbox]:not(:checked), [type=checkbox]:checked {
@@ -178,15 +179,19 @@ p {
   opacity: 1;
 }
 
+[type=checkbox]:checked ~ .icon-notlike1 {
+  opacity: 0;
+}
+
 /* Animation Plats */
 .anim1 {
   height: 4.8em;
-  width: 4em;
+  width: 1em;
   background-color: #99E2D0;
   border-radius: 0 1em 1em 0;
   float: right;
   margin-top: -2.7em;
-  margin-right: -4em;
+  margin-right: -1em;
   margin-left: 1em;
   opacity: 0;
   position: relative;
@@ -196,7 +201,7 @@ p {
   color: white;
   font-size: 20px;
   margin-top: 1.2em;
-  margin-left: 1em;
+  margin-left: -0.1em;
 }
 
 .main-menu--plats {
@@ -207,29 +212,25 @@ p {
   animation: animate 0.25s linear forwards;
 }
 
-.main-menu--plats:active .trim {
-  animation: animate 0.25s linear forwards;
-  max-width: 13.7em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.main-menu--plats:active .fa-circle-check {
+  animation: check 0.25s linear forwards;
 }
 
 @keyframes animate {
   0% {
     opacity: 0;
-    margin-right: -4em;
+    margin-right: -1em;
+    width: 2em;
   }
   25% {
-    margin-right: -3em;
     opacity: 0;
+    width: 3em;
   }
   50% {
-    margin-right: -2em;
     opacity: 0;
+    width: 4em;
   }
   75% {
-    margin-right: -1em;
     opacity: 0.25;
   }
   82% {
@@ -237,20 +238,65 @@ p {
   }
   100% {
     opacity: 1;
-    margin-right: 0;
+    margin-right: 0em;
+    width: 4em;
   }
 }
+
+@keyframes check {
+  0% {
+    opacity: 0;
+    margin-right: -1em;
+  }
+  100%{
+    opacity: 1;
+    margin-right: 0em;
+    margin-left: 1em;
+  }
+}
+
+.main-menu--plats:active .trim{
+  animation: rogner 0.1s linear forwards;
+}
+
+@keyframes rogner {
+  from{
+    max-width: 25em;
+  }
+  to{
+    max-width: 15em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* Suppression "rogner" */
+@media (min-width: 435px){
+  @keyframes rogner {
+    from{
+      max-width: 25em;
+    }
+    to{
+      max-width: 25em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
 /* Footer */
 footer {
   position: relative;
   z-index: 3;
-  width: 23.4em;
+  width: 100%;
   top: 12em;
 }
 
 .foot-article--logo {
   margin-top: 1em;
-  margin-left: -1em;
+  margin-left: -1.5em;
 }
 
 /* Footer La note enchantée */
