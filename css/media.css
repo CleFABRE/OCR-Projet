@@ -10,21 +10,32 @@
   }
   .sec-loca {
     filter: none;
-    width: 768px;
+    width: 100%;
   }
   .sec-exp {
-    height: 15em;
+    height: 18em;
+  }
+  .title1 {
+    font-size: 1.8em;
+    margin-top: 1em;
+    padding-top: 2em;
   }
 
   /* Fonctionnement */ 
-  .title3 {
-    margin-left: 4em;
+  .title-3{
+    margin-left: 10%;
   }
   .choice {
-    margin-left: 5em;
+    margin-left: 8%;
+  }
+  .choice-link--type {
+    width: 65%;
   }
 
   /* Card Restaurant */
+  .title3{
+    margin-left: 10%;
+  }
   .resto {
     height: 45em;
   }
@@ -32,69 +43,93 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 768px;
-    height: 34.5em;
-    margin-left: -2.3em;
-    padding-left: 1em;
+    width: 80%;
+    margin: auto;
     flex-wrap: wrap;
   }
   .resto-card--ca {
     height: 15.9em;
-    width: 21.2em;
-    margin-left: 2.8em;
+    width: 100%;
     margin-bottom: 3em;
   }
   .resto-card--ca_img-food {
     height: 11em;
-    width: 21.2em;
+    width: 37.6%;
+    margin-right: 2em;
+  }
+  .card{
+    width: 47%;
   }
 
   /* Animation coeur */
   .heart-like {
+    margin-right: 18%;
     margin-top: -2em;
   }
 
   /* Main MENU */
-  .resto-pic img {
-    min-width: 768px;
+  .title-resto{
+    font-size: 1.7em;
+    margin-bottom: 1.6em;
   }
-  h1 {
-    margin-left: 9em;
+  .resto-pic img {
+    min-width: 100%;
   }
   .main {
     height: 76.3em;
-    width: 768px;
+    width: 100%;
     top: 13em;
     margin: auto;
   }
   .main-menu {
-    margin-left: 4em;
+    width: 39.5em;
+    margin: auto;
   }
   .main-menu--plats {
-    width: 634px;
+    width: 39.5em;
   }
-  .main-button {
-    margin-top: 3.5em;
-  }
-
+  
   /* Main MENU La note enchantée */
   .main1 {
-    height: 81.5em;
-    width: 768px;
-    top: 13em;
+    height: 81em;
+    width: 100%;
+    top: 14em;
     margin: auto;
   }
 
   /* Animation Coeur */ 
   .heart-like1 {
-    margin-right: 11em;
-    margin-top: -2.5em;
+    margin-right: 9em;
+  }
+  .icon-notlike1{
+    margin-top: 0.85em;
+  }
+  .icon-like1{
+    margin-top: 0.38em;
   }
 
   /* Footer INDEX / MENU 1 */
   footer {
-    width: 768px;
-    top: 8em;
+    height: 7.1em;
+    top: 7.5em;
+  }
+  .foot-article {
+    float: right;
+  }
+  .foot-article--logo {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 3.3em;
+    margin-right: 2em;
+  }
+  ul {
+    margin-top: -3em;
+    display: flex;
+    flex-direction: row;
+    margin-right: 9em;
+  }
+  li {
+    margin-right: 1em;
   }
   /* Footer La note enchantée */
   .one {
@@ -104,10 +139,7 @@
 
 
 /* Media queries, breakpoint (desktop, sup 1024px)*/
-@media (min-width: 1024px) {
-  body {
-    max-width: 1440px;
-  }
+@media (min-width: 1024px){  
   /* Header */
   .sec-logo--log {
     height: 6em;
@@ -119,65 +151,62 @@
   }
   .sec-loca {
     filter: none;
-    width: 90em;
+    width: 100%;
+  }
+  .sec-loca--loca{
+    margin: auto;
   }
   .sec-logo--arrow, .sec-logo--arrow a {
     margin: 2em -2.4em 0 0.8em;
   }
   .title1 {
     font-size: 2.5em;
-    padding-top: 0.7em;
+    padding-top: 1.5em;
     margin-top: 1.2em;
   }
   .sec-exp {
-    height: 15em;
+    height: 18em;
+    width: 100%;
   }
   /* Fonctionnement INDEX */
-  .title3 {
-    margin-left: 7.5em;
+  .Fonction{
+    width: 80%;
+    margin: auto;
+  }
+  .title-3{
+    margin-left: 0%;
   }
   .sect-ligne {
+    margin-left: -11%;
     display: flex;
     flex-direction: row;
   }
-  .choice {
-    margin-left: 11.2em;
-    margin-bottom: -0.9em;
-    margin-right: 10.4em;
+  .choice{
+    margin-right: 19%;
   }
-  .choice-nub {
-    margin-left: 0;
+  .choice-link--type {
+    width: 17em;
   }
+  
   /* Restaurants INDEX */
-  .resto {
-    height: 45em;
+  .title3{
+    margin-left: 10%;
   }
   .resto-card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 56.2em;
-    height: 34.5em;
-    margin-left: 11.5em;
-    padding-left: 11.2em;
-    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
   }
-  .resto-card--ca {
-    height: 15.9em;
-    width: 30.6em;
-    margin-left: -11.5em;
-    margin-bottom: 3em;
+  .card{
+    width: 47%;
   }
   .resto-card--ca_img-food {
-    height: 11em;
-    width: 30.6em;
+    width: 37.6%;
   }
-  .resto-card--ca_like {
-    margin-top: -6.6em;
-  }
+  
   /* Animation Coeur INDEX */
   .heart-like {
     margin-top: -6.3em;
+    margin-right: 4em;
   }
   .icons {
     margin-top: 0.5em;
@@ -188,58 +217,54 @@
   .heart-like:hover .icon-like {
     opacity: 1;
   }
+
   /* Main MENU */
   .resto-pic img {
-    width: 1440px;
+    width: 100%;
     height: 23.9em;
   }
-  h1 {
+  .title-resto {
     font-size: 1.8em;
-    margin-left: 13em;
+    margin: auto;
   }
   .main {
     height: 76.3em;
-    width: 65.9em;
+    width: 64em;
     top: 20em;
-    margin: auto;
-  }
-  .main-card--like a {
-    float: left;
-    margin-left: 27.5em;
-    margin-top: -2.3em;
   }
   .main-menu {
-    margin-left: 13.2em;
+    margin: auto;
+    width: 39.5em;
     margin-top: 3em;
   }
   .main-menu--plats {
-    width: 634px;
+    width: 39.5em;
   }
-  .main-button {
-    margin-top: 3.5em;
-  }
+  
   /* Main MENU La note enchantée */
   .main1 {
     height: 81.5em;
-    width: 65.9em;
+    width: 64em;
     top: 20em;
-    margin: auto;
   }
+
   /* Animation Coeur MENU */
   .heart-like1 {
-    margin-right: 15em;
+    margin-right: 10em;
     margin-top: -2.8em;
   }
   .heart-like1:hover .icon-like1 {
     opacity: 1;
   }
+
   /* Animation Plats */
   .main-menu--plats:hover .anim1 {
-    animation: animate 0.25s linear forwards;
+    animation: animate 0.3s linear forwards;
   }
-  .main-menu--plats:active .trim {
-    max-width: 18.7em;
+  .main-menu--plats:hover .fa-circle-check {
+    animation: check 0.25s linear forwards;
   }
+
   /* Animation Bouton Explorer et Commander */
   .btn-link:hover {
     opacity: 0.9;
@@ -248,9 +273,10 @@
   .btn-link--style {
     margin-top: 3.5em;
   }
+  
   /* Footer INDEX / MENU 1 */
   footer {
-    width: 1440px;
+    width: 100%;
     height: 7.1em;
     top: 20em;
   }
@@ -262,19 +288,15 @@
     display: flex;
     flex-direction: row-reverse;
     margin-top: 3.3em;
-    margin-right: 4em;
   }
   ul {
     margin-top: -3em;
     display: flex;
     flex-direction: row;
-    margin-right: 14.3em;
-  }
-  li {
-    margin-right: 1.5em;
   }
   /* Footer La note enchantée */
   .one {
     top: 20em;
   }
-}/*# sourceMappingURL=media.css.map */
+}
+/*# sourceMappingURL=media.css.map */
