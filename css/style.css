@@ -31,7 +31,7 @@ body {
 
 .sec-loca {
   height: 3.1em;
-  width: 23.4em;
+  width: 100%;
   position: absolute;
   background-color: #EAEAEA;
   display: flex;
@@ -109,10 +109,13 @@ body {
 }
 
 /* Fonctionnement */
-.title3 {
+.title-3 {
   font-size: 1.5em;
-  margin-left: 1em;
+  margin-left: 8%;
   margin-top: 2em;
+}
+.Fonction{
+  width: 95%;
 }
 
 .choice {
@@ -120,7 +123,7 @@ body {
   margin: 0.4em;
   margin-bottom: 2.5em;
   box-sizing: border-box;
-  margin-left: 0.3em;
+  margin-left: 5%;
   filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.1));
 }
 .choice-nub {
@@ -147,7 +150,7 @@ body {
 }
 .choice-link--type {
   height: 4.5em;
-  width: 20em;
+  width: 85%;
   border-radius: 1.3em;
   background-color: #F2F2F2;
   position: absolute;
@@ -166,6 +169,11 @@ body {
 }
 
 /* Restaurants */
+.title3{
+  font-size: 1.5em;
+  margin-left: 8%;
+  margin-top: 2em;
+}
 .resto {
   margin-top: 5.7em;
   background-color: #F2F2F2;
@@ -173,13 +181,12 @@ body {
   height: 76em;
   box-sizing: border-box;
 }
-
 .resto-card {
   display: flex;
   flex-direction: column;
-  margin-left: 1.1em;
+  margin-left: 5%;
   height: 15.6em;
-  width: 21.2em;
+  width: 90%;
 }
 .resto-card--ca {
   margin-bottom: 1.1em;
@@ -188,7 +195,7 @@ body {
 }
 .resto-card--ca_img-food {
   height: 10.9em;
-  width: 21.2em;
+  width: 90%;
   border-radius: 15px 15px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
@@ -250,6 +257,7 @@ body {
 .icon-notlike {
   margin-top: -2.2em;
   font-size: 1.6em;
+  transition: 0.5s ease-in-out;
 }
 
 .icon-like {
@@ -266,6 +274,10 @@ body {
   opacity: 1;
 }
 
+.heart-like:active .icon-notlike {
+  opacity: 0;
+}
+
 [type=checkbox]:not(:checked), [type=checkbox]:checked {
   opacity: 0.01;
 }
@@ -274,10 +286,15 @@ body {
   opacity: 1;
 }
 
+[type=checkbox]:checked ~ .icon-notlike {
+  opacity: 0;
+}
+
 /* Footer */
 footer {
   background-color: #353535;
   height: 11.7em;
+  width: 100%;
 }
 
 .foot-article {
