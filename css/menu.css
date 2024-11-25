@@ -23,8 +23,9 @@ a {
   position: absolute;
 }
 
-h1 {
-  margin-left: 1em;
+.title-resto {
+  margin: auto;
+  width: 11.5em;
   padding-top: 1.5em;
   font-family: "shrikhand", "cursive";
 }
