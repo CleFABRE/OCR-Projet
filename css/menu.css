@@ -280,9 +280,6 @@ p {
     }
     to{
       max-width: 25em;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
     }
   }
 }
